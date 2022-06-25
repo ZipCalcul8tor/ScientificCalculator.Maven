@@ -1,6 +1,11 @@
 package com.zipcodewilmington.scientificcalculator;
 
+// May have to return current total = specified operation in each method
+
 public class calculator {
+
+    public static double currentTotal = 0;
+    public static String display = String.valueOf(currentTotal);
     public static double addition(double x, double y) {
         return x + y;
     }
@@ -12,9 +17,9 @@ public class calculator {
     }
     public static double division(double x, double y) {
         if(y == 0) {
-            calculator.display="Err";
+            throw new IllegalArgumentException("Err");
         } else {
-            return x / y;
+            return  x / y;
         }
     }
 

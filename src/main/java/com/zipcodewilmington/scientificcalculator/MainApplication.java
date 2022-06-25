@@ -15,6 +15,7 @@ public class MainApplication {
 //        Console.println("The user input %s as a d", d);
 
         calculator calculator1 = new calculator();
-
+calculator1.division(5,0);
+System.out.println(calculator1.display);
     }
 }

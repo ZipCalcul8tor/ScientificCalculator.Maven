@@ -42,6 +42,15 @@ public class TestMainApplication {
     @Test               //Test that divide by 0 throws an 'Err'
     public void divisionTest() {
         Assertions.assertEquals(7, calculator.division(21, 3));
+//        Assertions.assertEquals("Err", calculator.division(5, 0));
+    }
+
+    @Test  //passes, but how to best integrate?
+    public void divideByZeroTest() {
+        Throwable exception = Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            calculator.division(5, 0);
+        });
+        Assertions.assertEquals("Err", exception.getMessage());
     }
 
     @Test
