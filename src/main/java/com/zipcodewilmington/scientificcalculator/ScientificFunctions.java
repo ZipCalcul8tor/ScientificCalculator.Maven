@@ -9,7 +9,7 @@ public class ScientificFunctions {
     }
 
     public double square(double value){
-        return 0.00;
+        return value * value;
     }
 
     public double squareRoot(double value){
@@ -22,36 +22,40 @@ public class ScientificFunctions {
     }
 
     public double switchSign(double value){
-        return 0.00;
+        return -value;
     }
 
     public double sine(double value){
-        return Math.asin(value);
+        return Math.sin(value);
 
     }
 
     public double cosine(double value){
-        return  Math.acos(value);
+        return  Math.cos(value);
     }
 
     public double tangent(double value){
-        return Math.atan(value);
+        return Math.tan(value);
     }
 
     public double inverseSine(double value){
-        return 0.00;
+        return Math.asin(value) ;
     }
 
     public double inverseCosine(double value){
-        return 0.00;
+        return Math.acos(value);
     }
 
     public double inverseTangent(double value){
-        return 0.00;
+        return Math.atan(value);
     }
 
-    public double factorial(double value, double value2){
-        return 0.00;
+    public double factorial(double value){
+        double newValue = value;
+        for (int i = (int)value -1; i > 0; i--) {
+            newValue *= i;
+        }
+        return newValue;
     }
 
 
