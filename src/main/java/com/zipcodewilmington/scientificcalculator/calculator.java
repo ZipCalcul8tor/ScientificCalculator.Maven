@@ -4,8 +4,13 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class calculator {
 
+    //Instance Variables
     public static double currentTotal = 0;
     public static String display = String.valueOf(currentTotal);
+
+    //Constructors (Basic functionality may not need constructors, Scientific would benefit from knowing display & unit modes)
+
+    //Methods
     public static double addition(double x, double y) {
         return x + y;
     }
@@ -37,6 +42,9 @@ public class calculator {
 
     public static double inverse(double x) {        //needs divide by 0 exception handling
         return 1/x;
+    }
+    public static double clearButton() {
+        return currentTotal = 0;
     }
 
 }

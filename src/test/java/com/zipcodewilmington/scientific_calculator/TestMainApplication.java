@@ -69,18 +69,68 @@ public class TestMainApplication {
     }
 
     @Test
-    public void inverseTest() {
+    public void inverseTest() { //this test runs fine, results may be different depending on how many decimal points we return.
         Assertions.assertEquals(0.2, calculator.inverse(5));
     }
 
-//   @Test                                         //Figure out how to program!!!
+//   @Test                                         //Read & practice error & exception testing.
 //    public void errorTesting() {
 //
 //    }
 
     @Test
     public void clearButtonTest() {
+        Assertions.assertTrue(calculator.currentTotal == 0);
+    }
 
+    //Tests below here require updating "calculator2" with scientific calculator name class, once provided.
+
+    //How should these conversions be tested? Will user still enter decimal values or values in stated type?
+    @Test
+    public void binaryNumberTest() {
+        Assertions.assertEquals(100111001, calculator2.binary(313));
+    }
+
+    @Test
+    public void octalNumberTest() {
+        Assertions.assertEquals(471, calculator2.octal(313));
+    }
+
+    @Test
+    public void decimalNumberTest() {
+        Assertions.assertEquals(313, calculator2.decimal(313));
+    }
+
+    @Test
+    public void hexadecimalTest() {
+        Assertions.assertEquals(139, calculator2.hexadecimal(313));
+    }
+
+//    @Test  //See how this is programmed on JD's end.
+//    public void switchDisplayTest() {
+//
+//    }
+
+    @Test        //Check this against SciCalc code, is this best way to test this value is stored?
+    public void memoryTest() {
+        Assertions.assertEquals(12, calculator2.memStore(12));
+    }
+
+    @Test  //WILL NEED A TEST FOR WHEN MEM IS CALLED BUT IS NULL TO RETURN 'Err'
+    //to make this work, rather than null, set initial memory to 0, but have a corresponding boolean to see if the user has
+    //store a value. If so set value to true. If false, memory cannot be called (if else statement in memory call).
+    public void memClearTest() {
+        memory = 12;
+        calculator2.callClearMem();
+        Assertions.assertEquals(null, calculator2.memStore(null)); //doubles cannot be nulls, find workaround.
+//        Assertions.assertFalse(calculator2.numStored); //see above note.
+    }
+
+    //For trig functions, find out how code is handling the numbers. Test cases may need to be updated to reflect radians.
+    //Math.toRadians(variable);
+    @Test
+    public void sineTest() {
+        Assertions.assertEquals(0.76604444, calculator2.sine(50));
     }
 }
 
