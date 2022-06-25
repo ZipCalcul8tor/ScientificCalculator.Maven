@@ -17,9 +17,22 @@ public class ScientificFunctions {
 
     }
 
-    public double inverse(double value){
-        return 0.00;
-    }
+//    public double inverse(double value){
+//        int n = scn.nextInt();
+//        int temp = n;
+//        int nod = 0;
+//        int ans = 0;
+//        while(temp > 0){
+//            nod ++;
+//            temp /= 10;
+//        }
+//
+//        for(int i = 1; i = nod; i++){
+//            int pians = n % 10;
+//            ans += i * (int) Math.pow(10, pians - 1);
+//            n = n/10;
+//        }
+//    }
 
     public double switchSign(double value){
         return -value;
@@ -27,7 +40,6 @@ public class ScientificFunctions {
 
     public double sine(double value){
         return Math.sin(value);
-
     }
 
     public double cosine(double value){
@@ -57,6 +69,15 @@ public class ScientificFunctions {
         }
         return newValue;
     }
+    public double naturalLog(double value){
+        return Math.log(value);
+    }
 
+    public double inverseLog(double value){
+        return Math.log10(value);
+    }
 
+    public double inverseNatLog(){
+        return 0.00;
+    }
 }
