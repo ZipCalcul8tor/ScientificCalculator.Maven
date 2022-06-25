@@ -24,6 +24,7 @@ public class TestMainApplication {
 //        Assertions.assertTrue(calculator.getStatus()); //This may need to be changed to assertEquals depending on initialization state.
 //    }
 
+    //Basic Functions Tests
     @Test
     public void additionTest() {
         Assertions.assertEquals(7, calculator.addition(3, 4));
@@ -78,6 +79,7 @@ public class TestMainApplication {
 //
 //    }
 
+    //Clear Button & Unit Type Tests
     @Test
     public void clearButtonTest() {
         Assertions.assertTrue(calculator.currentTotal == 0);
@@ -111,6 +113,8 @@ public class TestMainApplication {
 //
 //    }
 
+    //Memory Tests
+
     @Test        //Check this against SciCalc code, is this best way to test this value is stored?
     public void memoryTest() {
         Assertions.assertEquals(12, calculator2.memStore(12));
@@ -129,9 +133,26 @@ public class TestMainApplication {
     //For trig functions, find out how code is handling the numbers. Test cases may need to be updated to reflect radians.
     //Math.toRadians(variable);
     @Test
-    public void sineTest() {
+    public void sineTest() { //is there a way to check for radians vs degrees?
         Assertions.assertEquals(0.76604444, calculator2.sine(50));
     }
+
+    @Test
+    public void cosineTest() {
+        Assertions.assertEquals(0.96496602849, calculator2.cosine(50));
+    }
+
+    @Test
+    public void tangentTest() {
+        Assertions.assertEquals(-0.27190061199, calculator2.tanget(50));
+    }
+
+    //The Inverse Operations Tests
+
+
+    //Switching Units
+
+
 }
 
 
