@@ -9,7 +9,7 @@ public class Calculator {
         double x;
         x = 0;
         System.out.println(0);
-        System.out.print("Enter the  number");
+        System.out.print("Enter the number");
         x=input.nextDouble();
         System.out.println(x);
         double y;
