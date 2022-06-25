@@ -49,7 +49,30 @@ public class TestMainApplication {
         Assertions.assertEquals(121, calculator.square(11));
     }
 
+    @Test
+    public void squareRootTest() {
+        Assertions.assertEquals(11, calculator.squareRoot(121));
+    }
 
+    @Test
+    public void variableExponentTest() {
+        Assertions.assertEquals(16807, calculator.variableExponent(7, 5));
+    }
+
+    @Test
+    public void inverseTest() {
+        Assertions.assertEquals(0.2, calculator.inverse(5));
+    }
+
+//   @Test                                         //Figure out how to program!!!
+//    public void errorTesting() {
+//
+//    }
+
+    @Test
+    public void clearButtonTest() {
+
+    }
 }
 
 
