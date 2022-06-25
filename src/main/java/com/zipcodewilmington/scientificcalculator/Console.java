@@ -23,7 +23,7 @@ public class Console {
     }
 
     public static Integer getIntegerInput(String prompt) {
-        return null;
+        return null;  //i did this in too large too small
     }
 
     public static Double getDoubleInput(String prompt) {
