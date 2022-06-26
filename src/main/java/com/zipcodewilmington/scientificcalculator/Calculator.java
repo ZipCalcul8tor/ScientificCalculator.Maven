@@ -6,13 +6,11 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         char Operator;
-        double x;
-        x = 0;
+        double x, y;
         System.out.println(0);
-        System.out.print("Enter the  number");
+        System.out.print("Enter the number");
         x=input.nextDouble();
         System.out.println(x);
-        double y;
         y = input.nextDouble();
         System.out.println(y);
         System.out.println("Enter operator: + , -,*, /,^,√");
