@@ -76,7 +76,10 @@ public class MainApplication {
                 System.out.println("Goodbye");
                 powerState = false;
                 break;
-            } else {
+//            } else if (operator.equals("???")) { //mama mac wouldn't give me permission :( .
+//                ProcessBuilder macCalc = new ProcessBuilder("/System/Applications/Calculator.app");
+//                macCalc.start();
+//            }else {
                 System.out.println("Please select correct option");
             }
 
