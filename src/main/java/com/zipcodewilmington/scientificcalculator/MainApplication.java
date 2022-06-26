@@ -41,6 +41,7 @@ public class MainApplication {
             String operator;
             operator = input.next();
             operator = operator.toLowerCase();
+            ScientificFunctions sciFunc = new ScientificFunctions();
             if (operator.equals("addition")) {
                 result = calculator1.addition(x, y);
                 System.out.println(result);
@@ -60,13 +61,13 @@ public class MainApplication {
             } else if (operator.equals("square")) {
                 result = calculator1.square(x);
                 System.out.println(result);
-            } else if (operator.equals("squareroot")) {
+            } else if (operator.equals("squareRoot")) {
                 result = calculator1.squareRoot(x, y);
                 System.out.println(result);
             } else if (operator.equals("exponential")) {
                 result = calculator1.toPower(x, y);
                 System.out.println(result);
-            } else if (operator.equals("switchsign")) {
+            } else if (operator.equals("switchSign")) {
                 result = calculator1.switchSign(x);
                 System.out.println(result);
             } else if (operator.equals("inverse")) {
@@ -76,7 +77,42 @@ public class MainApplication {
                 System.out.println("Goodbye");
                 powerState = false;
                 break;
-            } else {
+            
+            } else if (operator.equals("sine")) {
+                result = sciFunc.sine(x);
+                System.out.println(result);
+            } else if (operator.equals("cosine")) {
+                result = sciFunc.cosine(x);
+                System.out.println(result);
+            } else if (operator.equals("tangent")) {
+                result = sciFunc.tangent(x)
+                System.out.println(result);
+            } else if (operator.equals("inverseSine")) {
+                result = sciFunc.inverseSine(x);
+                System.out.println(result);
+            } else if (operator.equals("inverseCosine")){
+                result = sciFunc.inverseCosine(x);
+                System.out.println(result);
+            } else if (operator.equals("inverseTangent")) {
+                result = sciFunc.inverseTangent(x);
+                System.out.println(result);
+            } else if (operator.equals("factorial")) {
+                result = sciFunc.factorial(x);
+                System.out.println(result);
+            } else if (operator.equals("naturalLog")) {
+                result = sciFunc.naturalLog(x);
+                System.out.println(result);
+            } else if (operator.equals("inverseLog")) {
+                result = sciFunc.inverseLog(x);
+                System.out.println(result);
+
+            }
+
+            }
+
+            }
+
+
                 System.out.println("Please select correct option");
             }
 
