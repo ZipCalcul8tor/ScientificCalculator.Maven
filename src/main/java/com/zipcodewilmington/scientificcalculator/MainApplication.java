@@ -26,33 +26,34 @@ public class MainApplication {
         System.out.println("Enter operation: Addition,Subtraction,Multiplication,Division,Square,SquareRoot,exponential,switchSign");
         String operator;
         operator = input.next();
-        if(operator.equals("Addition")){
+        operator=operator.toLowerCase();
+        if(operator.equals("addition")){
             result=calculator1.addition(x, y);
             System.out.println(result);
-        } else if (operator.equals("Subtraction")){
+        } else if (operator.equals("subtraction")){
             result=calculator1.substraction(x,y);
             System.out.println(result);
-        } else if (operator.equals("Multiplication")) {
+        } else if (operator.equals("multiplication")) {
             result = calculator1.multiplication(x, y);
             System.out.println(result);
-        } else if (operator.equals("Division")){
+        } else if (operator.equals("division")){
             if (y != 0) {
             result = calculator1.division(x,y);
             System.out.println(result);}
             else {System.out.println("Error");};
-        }else if (operator.equals("Square")) {
+        }else if (operator.equals("square")) {
             result = calculator1.square(x);
             System.out.println(result);
-        }else if (operator.equals("SquareRoot")) {
+        }else if (operator.equals("squareroot")) {
             result = calculator1.squareRoot(x,y);
             System.out.println(result);
         }else if (operator.equals("exponential")) {
             result = calculator1.toPower(x,y);
             System.out.println(result);
-        }else if (operator.equals("switchSign")) {
+        }else if (operator.equals("switchsign")) {
             result = calculator1.switchSign(x);
             System.out.println(result);
-        }else if (operator.equals("Inverse")) {
+        }else if (operator.equals("inverse")) {
             result = calculator1.inverse(x);
             System.out.println(result);
         }
