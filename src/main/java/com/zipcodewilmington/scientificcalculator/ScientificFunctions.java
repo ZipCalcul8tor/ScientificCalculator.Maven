@@ -4,9 +4,9 @@ public class ScientificFunctions {
 
 
 //    this is the constructor
-    public ScientificFunctions(){
-
-    }
+//    public ScientificFunctions(){
+//
+//    }
 
     public double square(double value){
         return value * value;
