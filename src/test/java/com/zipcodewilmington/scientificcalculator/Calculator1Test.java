@@ -66,4 +66,7 @@ public class Calculator1Test {
         Assertions.assertEquals(0.2, Calculator1.inverse(5));
     }
 
+    @Test
+    public void switchSignTest() {Assertions.assertEquals(-5, Calculator1.switchSign(5));}
+
 }
