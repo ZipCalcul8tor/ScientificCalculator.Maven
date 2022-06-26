@@ -10,14 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTest {
 
     @BeforeAll
-
-    public void newCalc(){Calculator testCalc = new Calculator();}
-
-    @Test
-    void main() {
-
-        //Basic Functions
-        @Test
-        testCalc.
+    public void calcReset() {
+        Calculator testCalc = new Calculator();
     }
+
+
 }
