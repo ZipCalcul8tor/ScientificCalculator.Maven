@@ -6,7 +6,7 @@ import com.zipcodewilmington.scientificcalculator.Calculator;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class MainApplication {
+public class altIncompleteMainApplication {
 
     public static Calculator calc = new Calculator();
     public static ScientificFunctions sci = new ScientificFunctions();
@@ -18,10 +18,14 @@ public class MainApplication {
     public static String[] options = {"+", "-", "*", "/", "^", "s", "c", "t", "is", "ic", "it", "!", "log", "ilog", "off"};
 
     public static Boolean onOff = true;
+    public String mode = "";
 
     public static void main(String[] args) {
         System.out.println("Welcome To ZipCalcul8tor");
-        if (onOff = true) {
+        while (onOff = true) {
+//            System.out.println("Please Enter a Mode");
+//            Scanner modeSelect = new Scanner(System.in);
+
         Scanner userInput = new Scanner(System.in);
         System.out.println("Please enter a number");
 
@@ -77,13 +81,6 @@ public class MainApplication {
 //        result = sci.square(input);
 //        System.out.println(result);
 
-//        Console.println("Welcome to my calculator!");
-//        String s = Console.getStringInput("Enter a string");
-//        Integer i = Console.getIntegerInput("Enter an integer");
-//        Double d = Console.getDoubleInput("Enter a double.");
-//        Console.println("The user input %s as a string", s);
-//        Console.println("The user input %s as a integer", i);
-//        Console.println("The user input %s as a d", d);
             }
         }
     }
