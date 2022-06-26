@@ -32,7 +32,7 @@ public class MainApplication {
             result=calculator1.addition(x, y);
             System.out.println(result);
         } else if (operator.equals("subtraction")){
-            result=calculator1.substraction(x,y);
+            result=calculator1.subtraction(x,y);
             System.out.println(result);
         } else if (operator.equals("multiplication")) {
             result = calculator1.multiplication(x, y);
