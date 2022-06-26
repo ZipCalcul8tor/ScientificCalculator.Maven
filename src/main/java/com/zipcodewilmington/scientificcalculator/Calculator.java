@@ -18,6 +18,7 @@ public class Calculator {
         System.out.println("Enter operator: + , -,*, /,^,√");
         Operator = input.next().charAt(0);
         double n;
+//        Check operatiion
         switch (Operator){
             case '+':
                 n = x + y;
