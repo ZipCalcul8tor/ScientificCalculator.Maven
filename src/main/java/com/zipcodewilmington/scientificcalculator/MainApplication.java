@@ -38,6 +38,7 @@ public class MainApplication {
             System.out.println("First Number = " + x + " Second Number = " + y);
             System.out.println("Enter operation: Addition,Subtraction,Multiplication,Division,Square,SquareRoot,exponential,switchSign, inverse");
             System.out.println("Please note, the following commands will only utilize the first number: Square, SquareRoot, Exponent, Switch Sign, Inverse");
+            System.out.println("Please choose an option: cosine, tangent, inverseSine, inverseCosine, inverseTangent, factorial, naturalLog, inverseLog");
             System.out.println("'off' to turn off.");
             String operator;
             operator = input.next();
