@@ -14,6 +14,7 @@ public class MainApplication {
         Console.println("Welcome to ZipCalcul8tor!");
 //        String s = Console.getStringInput("Enter a string");
 //        Integer i = Console.getIntegerInput("Enter an integer");
+
 //        double d = Console.getDoubleInput("Enter a double.");
 //
 //        Console.println("The user input %s as a string", s);
@@ -85,7 +86,7 @@ public class MainApplication {
                 result = sciFunc.cosine(x);
                 System.out.println(result);
             } else if (operator.equals("tangent")) {
-                result = sciFunc.tangent(x)
+                result = sciFunc.tangent(x);
                 System.out.println(result);
             } else if (operator.equals("inverseSine")) {
                 result = sciFunc.inverseSine(x);
@@ -113,13 +114,9 @@ public class MainApplication {
             }
 
 
-                System.out.println("Please select correct option");
+//                System.out.println("Please select correct option");
             }
 
-        }
 
-    }
-
-    }
 
 
