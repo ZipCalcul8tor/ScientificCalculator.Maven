@@ -23,8 +23,7 @@ public class Calculator1 {
         if (y != 0) {
             n = x / y;
         } else {
-            System.out.println("Not a valid number");
-            n= 0;
+            throw new IllegalArgumentException("Err");
         }
 
         return n;
