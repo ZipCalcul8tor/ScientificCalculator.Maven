@@ -8,17 +8,27 @@ public class Memoryfunction {
 
     }
 //    variable
-    private Double memory;
+    public Double memory;
+    public boolean memStored = false;
 
     public Double recall() {
-        return memory;
+        if (memStored = false) {
+        System.out.println("Err");
+        memStored = false;
+        return memory = 0.0;
+        } else{
+            memStored = false;
+            return memory;
+        }
     }
 //method
-    public void store(Double memory) {
-        this.memory = memory;
+    public boolean store() {
+       return memStored = true;
+
     }
 //Method
     public void reset(){
+        memStored = false;
         memory = null;
     }
 }

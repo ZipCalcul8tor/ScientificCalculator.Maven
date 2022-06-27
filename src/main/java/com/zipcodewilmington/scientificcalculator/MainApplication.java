@@ -21,16 +21,17 @@ public class MainApplication {
 //        Console.println("The user input %s as a integer", i);
 //        Console.println("The user input %s as a d", d);
         boolean powerState = true;
-
+    double x, y;
 
             Scanner input = new Scanner(System.in);
+            Memoryfunction mem = new Memoryfunction();
 
             while (powerState = true) {
             System.out.println("Enter a number");
-            double x = input.nextDouble();
+            x = input.nextDouble();
             System.out.println("First number = " + x);
             System.out.println("Enter the next number");
-            double y = input.nextDouble();
+            y = input.nextDouble();
             double result = 0.0;
             Calculator1 calculator1 = new Calculator1();
 
@@ -39,6 +40,7 @@ public class MainApplication {
             System.out.println("Enter operation: Addition,Subtraction,Multiplication,Division,Square,SquareRoot,exponential,switchSign, inverse");
             System.out.println("Please note, the following commands will only utilize the first number: Square, SquareRoot, Exponent, Switch Sign, Inverse");
             System.out.println("Please choose an option: cosine, tangent, inverseSine, inverseCosine, inverseTangent, factorial, naturalLog, inverseLog");
+            System.out.println("For memory: M+ to store a value (first number will be stored), MC to clear, MRC to recall and clear. ");
             System.out.println("'off' to turn off.");
             String operator;
             operator = input.next();
@@ -107,8 +109,18 @@ public class MainApplication {
             } else if (operator.equals("inverseLog")) {
                 result = sciFunc.inverseLog(x);
                 System.out.println(result);
-
             }
+//             else if (operator.equals("M+")) {
+//                 mem.store();
+//                 mem.memory = x;
+//            } else if (operator.equals("MC")) {
+//                mem.reset();
+//                mem.memory = 0.0;
+//            } else if (operator.equals("MRC")) {
+//                y = mem.memory;
+//                mem.recall();
+//            }
+
 
             }
 
