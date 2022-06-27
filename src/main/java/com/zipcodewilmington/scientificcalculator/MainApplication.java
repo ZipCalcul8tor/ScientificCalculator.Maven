@@ -77,7 +77,7 @@ public class MainApplication {
                 System.out.println("Goodbye");
                 powerState = false;
                 break;
-            
+
             } else if (operator.equals("sine")) {
                 result = sciFunc.sine(x);
                 System.out.println(result);
